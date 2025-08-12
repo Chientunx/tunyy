@@ -1,0 +1,310 @@
+/* ===== GENERAL SETUP ===== */
+:root {
+  --main-color: #262626;
+  --gray-color: #B3B3B3;
+  --light: #FFFFFF;
+  --gradient-color:linear-gradient(125deg, rgba(255, 255, 255, 0.20) 11.09%, rgba(255, 255, 255, 0.75) 34.21%, rgba(255, 255, 255, 0.55) 111.37%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'SF-Compact-Rounded', sans-serif;
+  background-color: #fff;
+}
+
+
+
+
+/* ===== HEADER ===== */
+.contact-header {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #aaa;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.back-btn img {
+  width: 2rem;
+  height: auto;
+}
+
+.booking-btn {
+  text-decoration: none;
+  font-weight: 500;
+  color: #111;
+  background: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .booking-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+
+
+/* ===== BODY ===== */
+
+/* ===== content ===== */
+
+.section-01-content {
+    width: 80%;
+    height: auto;
+    margin: 4rem auto;
+    text-align: center;
+}
+.subsection-01-content h3{
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 1rem 0rem;
+}
+.subsection-01-content p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 1rem 0rem;
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .subsection-01-content h3{
+        font-size: 1.4rem;
+        font-weight: 800;
+        margin: 0.5rem 0rem;
+    }
+    .subsection-01-content p{
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 1rem 0rem;
+        opacity: 0.5;
+        line-height: 1.3rem;
+    }
+}
+
+
+
+
+
+
+
+/* Section */
+/* ====== Container and Grid ====== */
+.main-frame {
+  width: 90%;
+  margin: 0 auto;
+}
+.section-title-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 0rem 2rem 0rem;
+  color: #FFFFFF;
+  background-color: #262626;
+  padding: 0.8rem 0.4rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.section-title-web {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 0rem 2rem 0rem;
+  color: #FFFFFF;
+  background-color: #262626;
+  padding: 0.8rem 0.4rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.grid-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto 3rem;
+}
+
+/* ====== Card ====== */
+.portfolio-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background: #f7f7f7;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+
+/* Thumbnail (LEFT) */
+.portfolio-thumbnail {
+  flex-shrink: 0;
+  width: 50%;
+  height: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+.portfolio-thumbnail img {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+}
+/* Right Side Info */
+.portfolio-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+/* Header with Icon, Title, and Tags */
+.portfolio-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0rem;
+}
+.icon-logo {
+  width: 4rem;
+  height: auto;
+}
+.portfolio-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+}
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+.tags span {
+  background: #ddd;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.5rem;
+  color: #333;
+}
+/* Description */
+.portfolio-description-01 {
+  font-size: 0.7rem;
+  color: #555;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+.portfolio-description-02 {
+  font-size: 0.7rem;
+  color: #555;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+.portfolio-description-03 {
+  font-size: 0.7rem;
+  color: #555;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+.portfolio-description-04 {
+  font-size: 0.7rem;
+  color: #555;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+.portfolio-description-05 {
+  font-size: 0.7rem;
+  color: #555;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+.portfolio-description-06 {
+  font-size: 0.7rem;
+  color: #555;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+/* Tools */
+.tools {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: auto;
+}
+.tools img {
+  width: 26px;
+  height: 26px;
+}
+/* Arrow */
+.hover-arrow {
+  position: absolute;
+  bottom: 0rem;
+  right: 1rem;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: 0.3s ease;
+}
+.hover-arrow img {
+  width: 4rem;
+  height: auto;
+}
+.portfolio-card:hover .hover-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .portfolio-card {
+    flex-direction: column;
+  }
+
+  .portfolio-thumbnail {
+    width: 100%;
+  }
+
+  .portfolio-info {
+    padding-top: 1rem;
+  }
+
+  .portfolio-header {
+    align-items: center;
+  }
+
+  .hover-arrow {
+    bottom: 0rem;
+    right: 1rem;
+  }
+  .portfolio-description {
+    margin-bottom: 1rem;
+}
+}
+
